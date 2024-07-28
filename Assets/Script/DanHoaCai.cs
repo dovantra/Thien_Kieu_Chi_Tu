@@ -42,7 +42,7 @@ public class DanHoaCai : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Dich"))
+        if (collision.gameObject.CompareTag("ATK"))
         {
             TocDo = 0;
             Destroy(gameObject, 0.1f);

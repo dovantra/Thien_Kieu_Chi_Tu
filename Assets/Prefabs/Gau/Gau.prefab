@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &939493189984331914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5718368635124116883}
+  m_Layer: 0
+  m_Name: ATK
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5718368635124116883
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939493189984331914}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.0748, y: 2.0748, z: 2.0748}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4568685597873667804}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3701318655558256710
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,12 +192,12 @@ GameObject:
   - component: {fileID: 4568685597873667804}
   - component: {fileID: 2552724300893426383}
   - component: {fileID: 790898388874071929}
-  - component: {fileID: 4155692994041206226}
   - component: {fileID: 7346887148766500463}
   - component: {fileID: 3565533624820865089}
-  m_Layer: 7
+  - component: {fileID: 3534176187061004513}
+  m_Layer: 0
   m_Name: Gau
-  m_TagString: Dich
+  m_TagString: ATK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -185,7 +216,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3811615839117850381}
-  - {fileID: 421518786598250010}
+  - {fileID: 5718368635124116883}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2552724300893426383
@@ -285,29 +316,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.95709133, y: 1.9375}
   m_EdgeRadius: 0
---- !u!114 &4155692994041206226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5715482863633708823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f87c7a586b5fd6a418d10be59334ea89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rig: {fileID: 7346887148766500463}
-  TocDoChay: 60
-  TocDo: 0
-  ani: {fileID: 3565533624820865089}
-  box: {fileID: 790898388874071929}
-  health: {fileID: 3312186567223443618}
-  hp: 20
-  huong: -1
-  cham: 0
-  viTriATK: {fileID: 421518786598250010}
-  atk: {fileID: 5612181731272257208, guid: 33ab77b0b56471e47bf19acf73eb935d, type: 3}
 --- !u!50 &7346887148766500463
 Rigidbody2D:
   serializedVersion: 4
@@ -356,37 +364,29 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &6804764923119466389
-GameObject:
+--- !u!114 &3534176187061004513
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 421518786598250010}
-  m_Layer: 7
-  m_Name: Gau_ATK
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &421518786598250010
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6804764923119466389}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4568685597873667804}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 5715482863633708823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f87c7a586b5fd6a418d10be59334ea89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rig: {fileID: 7346887148766500463}
+  TocDoChay: 30
+  TocDo: 0
+  ani: {fileID: 3565533624820865089}
+  box: {fileID: 790898388874071929}
+  health: {fileID: 3312186567223443618}
+  hp: 20
+  huong: -1
+  cham: 0
+  viTriATK: {fileID: 5718368635124116883}
+  atk: {fileID: 5612181731272257208, guid: 33ab77b0b56471e47bf19acf73eb935d, type: 3}
 --- !u!1 &8390987636209736388
 GameObject:
   m_ObjectHideFlags: 0

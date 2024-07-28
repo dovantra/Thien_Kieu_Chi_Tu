@@ -6,15 +6,15 @@ using UnityEngine.UI;
 
 public class Gau : MonoBehaviour
 {
-    public Rigidbody2D rig;
-    public float TocDoChay = 3;
-    public float TocDo;
-    public Animator ani;
-    public BoxCollider2D box;
-    public Slider health;
-    public int hp= 20;
-    public int huong = -1;
-    public bool cham=false;
+    [SerializeField] Rigidbody2D rig;
+    [SerializeField] float TocDoChay = 3;
+    [SerializeField] float TocDo;
+    [SerializeField] Animator ani;
+    [SerializeField] BoxCollider2D box;
+    [SerializeField] Slider health;
+    [SerializeField] int hp= 20;
+    [SerializeField] int huong = -1;
+    [SerializeField] bool cham=false;
 
     public Transform viTriATK;
     public GameObject atk;
@@ -57,17 +57,22 @@ public class Gau : MonoBehaviour
         
         if (collision.gameObject.CompareTag("DEF"))
         {
+            cham = true;
             TocDo = 0;
             StartCoroutine(ATK());
         }
+        if (collision.gameObject.CompareTag("Home"))
+        {
+            Destroy(gameObject);
+        }
 
-        
+
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("DEF"))
         {
-            StopCoroutine(ATK());
+            //cham = false;
             ani.SetTrigger("run");
             TocDo = transform.localScale.x * TocDoChay * huong * Time.deltaTime;
             
@@ -95,11 +100,14 @@ public class Gau : MonoBehaviour
 
     IEnumerator ATK()
     {
-        ani.SetTrigger("atk");
-        yield return new WaitForSeconds(0.4f);
-        Instantiate(atk, viTriATK.position, transform.rotation);
-        yield return new WaitForSeconds(1);
-        StartCoroutine(ATK());
+        do
+        {
+            ani.SetTrigger("atk");
+            yield return new WaitForSeconds(0.4f);
+            Instantiate(atk, viTriATK.position, transform.rotation);
+            yield return new WaitForSeconds(1);
+            
+        } while (cham == true) ;
     }
 
 
