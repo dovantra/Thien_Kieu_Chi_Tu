@@ -20,13 +20,21 @@ public class Chameleon_atk : MonoBehaviour
         }
         TocDo = transform.localScale.x * TocDoChay * huong * Time.deltaTime;
 
-        //Destroy(gameObject,1);
+        Destroy(gameObject,2);
     }
 
-    
+
     void Update()
     {
         rig.velocity = new Vector2(TocDo, 0f);
-        
+
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("DEF"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

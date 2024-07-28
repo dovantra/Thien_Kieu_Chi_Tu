@@ -15,12 +15,10 @@ public class HoaCai : MonoBehaviour
     [SerializeField] int huong;
     [SerializeField] bool cham = false;
 
-    [SerializeField] UnityEngine.UI.Slider health;
-    public int hp = 15;
+
     void Start()
     {
-        health.maxValue = hp;
-        health.value = hp;
+
 
         if (transform.position.x < 0)
         {
@@ -38,10 +36,7 @@ public class HoaCai : MonoBehaviour
     void Update()
     {
        
-        if (health.value <= 0)
-        {
-            Destroy(gameObject);
-        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -51,10 +46,7 @@ public class HoaCai : MonoBehaviour
             cham = true;
             StartCoroutine(BanDan());
         }
-        if (collision.gameObject.CompareTag("ATK_Gau"))
-        {
-            health.value = health.value - 3;
-        }
+
 
     }
     private void OnTriggerExit2D(Collider2D collision)

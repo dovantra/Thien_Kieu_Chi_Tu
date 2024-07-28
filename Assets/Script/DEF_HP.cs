@@ -1,11 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class Health : MonoBehaviour
+public class DEF_HP : MonoBehaviour
 {
-
-
     [SerializeField] UnityEngine.UI.Slider health;
     [SerializeField] GameObject parentGameObject;
     public int hp = 15;
@@ -22,16 +21,16 @@ public class Health : MonoBehaviour
             Destroy(parentGameObject);
         }
     }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("ATK_Gau"))
-        {
-            health.value = health.value - 5;
-        }
 
-        if (collision.gameObject.CompareTag("Chameleon_ATK"))
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Dan_Hoa_Cai"))
         {
-            health.value = health.value - 3;
+            health.value = health.value - 0.5f;
+        }
+        if (collision.gameObject.CompareTag("Home"))
+        {
+            Destroy(parentGameObject);
         }
     }
 }

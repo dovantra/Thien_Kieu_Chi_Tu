@@ -424,8 +424,6 @@ MonoBehaviour:
   Dan: {fileID: 3978019252731132379, guid: 700db1468ef5a9943be25092f8987eba, type: 3}
   huong: 0
   cham: 0
-  health: {fileID: 4326413016345838640}
-  hp: 15
 --- !u!1 &6461883318994705782
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,6 +554,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3862473301645934614}
   - component: {fileID: 1300180301336387780}
+  - component: {fileID: 5679494201033741957}
   m_Layer: 6
   m_Name: Box
   m_TagString: DEF
@@ -608,7 +607,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.16526002, y: 0.42791462}
@@ -624,3 +623,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7708255, y: 0.9945135}
   m_EdgeRadius: 0
+--- !u!114 &5679494201033741957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8759533584381778157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a1daab9058e20b4183361fe25864588, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 4326413016345838640}
+  parentGameObject: {fileID: 0}
+  hp: 15

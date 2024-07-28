@@ -10,9 +10,7 @@ public class Chameleon : MonoBehaviour
     [SerializeField] float TocDo;
 
     [SerializeField] Animator ani;
-
-    [SerializeField] Slider health;
-    [SerializeField] int hp = 20;
+    [SerializeField] UnityEngine.UI.Slider health;
 
     [SerializeField] int huong = -1;
     [SerializeField] bool cham = false;
@@ -35,18 +33,16 @@ public class Chameleon : MonoBehaviour
         }
 
         TocDo = transform.localScale.x * TocDoChay * huong * Time.deltaTime;
-
-        health.maxValue = hp;
-        health.value = hp;
+        rig.velocity = new Vector2(TocDo, 0f);
     }
 
 
     void Update()
     {
-        rig.velocity = new Vector2(TocDo, 0f);
+         
         if (health.value <= 0)
         {
-            TocDo = 0f;
+            TocDo = 0;
             ani.SetTrigger("hit");
             Destroy(gameObject,0.3f);
         }
@@ -55,31 +51,24 @@ public class Chameleon : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Dan_Hoa_Cai"))
-        {
-            health.value = health.value - 3;
-        }
-
+        
         if (collision.gameObject.CompareTag("DEF"))
         {
             cham = true;
-            TocDo = 0;
+            rig.velocity = Vector2.zero;
             StartCoroutine(ATK());
         }
-        if (collision.gameObject.CompareTag("Home"))
-        {
-            Destroy(gameObject);
-        }
-
+        
 
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("DEF"))
         {
-            //cham = false;
+            cham = false;
             ani.SetTrigger("run");
-            TocDo = transform.localScale.x * TocDoChay * huong * Time.deltaTime;
+            rig.velocity = new Vector2(TocDo, 0f);
+            //TocDo = transform.localScale.x * TocDoChay * huong * Time.deltaTime;
 
         }
     }

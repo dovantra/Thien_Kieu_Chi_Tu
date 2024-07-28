@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4497254851758341500}
   m_Layer: 0
   m_Name: Chameleon_ATK
-  m_TagString: Untagged
+  m_TagString: Chameleon_ATK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,6 +119,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rig: {fileID: 2779180294772596305}
-  TocDoChay: 30
+  TocDoChay: 2000
   TocDo: 0
   huong: -1

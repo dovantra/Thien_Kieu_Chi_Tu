@@ -12,6 +12,7 @@ TagManager:
   - ATK
   - ATK_Gau
   - Home
+  - Chameleon_ATK
   layers:
   - Default
   - TransparentFX
