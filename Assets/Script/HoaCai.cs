@@ -48,24 +48,34 @@ public class HoaCai : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("ATK"))
         {
-            cham= true;
+            cham = true;
             StartCoroutine(BanDan());
         }
-               
+        if (collision.gameObject.CompareTag("ATK_Gau"))
+        {
+            health.value = health.value - 3;
+        }
+
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        //ani.SetTrigger("idie");
-        //cham = false;
+        if (collision.gameObject.CompareTag("ATK"))
+        {
+            cham = false;
+            ani.SetTrigger("idie");
+        }
+        
     }
     IEnumerator BanDan()
     {
-        do
-        {
+        
+        while (cham == true) 
+        {          
             ani.SetTrigger("atk");
             yield return new WaitForSeconds(0.5f);
             Instantiate(Dan, viTriDan.position, transform.rotation);
-            yield return new WaitForSeconds(0.75f);
-        } while (cham == true);
+            yield return new WaitForSeconds(0.5f);
+        }
+        
     }
 }

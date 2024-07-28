@@ -206,7 +206,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: -1991794403
@@ -394,7 +394,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.015473, y: 0.421875}
+  m_Offset: {x: -4.079685, y: 0.421875}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -405,7 +405,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.4727983, y: 0.84375}
+  m_Size: {x: 7.448296, y: 0.84375}
   m_EdgeRadius: 0
 --- !u!114 &3830384466437105851
 MonoBehaviour:
@@ -535,7 +535,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 8190760125029774272}
   m_FillRect: {fileID: 1339051077820578109}
   m_HandleRect: {fileID: 0}
   m_Direction: 0
@@ -556,7 +556,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3862473301645934614}
   - component: {fileID: 1300180301336387780}
-  - component: {fileID: 387374753578892017}
   m_Layer: 6
   m_Name: Box
   m_TagString: DEF
@@ -625,17 +624,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7708255, y: 0.9945135}
   m_EdgeRadius: 0
---- !u!114 &387374753578892017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8759533584381778157}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a1daab9058e20b4183361fe25864588, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: {fileID: 4326413016345838640}
-  cham: 0
