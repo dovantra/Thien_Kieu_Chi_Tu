@@ -286,7 +286,7 @@ GameObject:
   - component: {fileID: 6370985114446669001}
   m_Layer: 0
   m_Name: Chameleon
-  m_TagString: Untagged
+  m_TagString: Check_ATK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

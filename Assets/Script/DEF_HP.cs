@@ -26,7 +26,7 @@ public class DEF_HP : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Dan_Hoa_Cai"))
         {
-            health.value = health.value - 0.5f;
+            health.value = health.value - 3;
         }
         if (collision.gameObject.CompareTag("Home"))
         {

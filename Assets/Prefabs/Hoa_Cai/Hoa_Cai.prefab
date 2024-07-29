@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 3830384466437105851}
   m_Layer: 0
   m_Name: Hoa_Cai
-  m_TagString: Untagged
+  m_TagString: Check_DEF
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4569931936074560475}
   - component: {fileID: 8314895506809821006}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Box
   m_TagString: ATK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,7 +62,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.32859945, y: 0.78863907}
@@ -290,7 +290,7 @@ GameObject:
   - component: {fileID: 3534176187061004513}
   m_Layer: 0
   m_Name: Gau
-  m_TagString: Untagged
+  m_TagString: Check_ATK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -397,7 +397,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.19814539, y: 0.975633}
+  m_Offset: {x: 0.10782647, y: 0.975633}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -408,7 +408,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7968769, y: 2.006335}
+  m_Size: {x: 1.9775147, y: 2.006335}
   m_EdgeRadius: 0
 --- !u!50 &7346887148766500463
 Rigidbody2D:
