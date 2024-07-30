@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class DEF_HP : MonoBehaviour
 {
+    // Mau cua phe tan cong
+
     [SerializeField] UnityEngine.UI.Slider health;
     [SerializeField] GameObject parentGameObject;
     public int hp = 15;
@@ -26,7 +28,7 @@ public class DEF_HP : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Dan_Hoa_Cai"))
         {
-            health.value = health.value - 1;
+            health.value = health.value - 3;
         }
         if (collision.gameObject.CompareTag("Home"))
         {

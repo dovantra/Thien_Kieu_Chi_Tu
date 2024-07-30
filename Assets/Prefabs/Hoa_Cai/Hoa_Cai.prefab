@@ -394,7 +394,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -4.079685, y: 0.421875}
+  m_Offset: {x: -3.6483922, y: 0.421875}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -405,7 +405,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.448296, y: 0.84375}
+  m_Size: {x: 6.5857105, y: 0.84375}
   m_EdgeRadius: 0
 --- !u!114 &3830384466437105851
 MonoBehaviour:
@@ -423,7 +423,12 @@ MonoBehaviour:
   viTriDan: {fileID: 1487707083461696644}
   Dan: {fileID: 3978019252731132379, guid: 700db1468ef5a9943be25092f8987eba, type: 3}
   huong: 0
-  cham: 0
+  ban: 0
+  dangBan: 1
+  origin: {x: 0, y: 0}
+  direction: {x: 0, y: 0}
+  rc: {x: 0, y: 0, z: 0}
+  distance: 5
 --- !u!1 &6461883318994705782
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,7 +561,7 @@ GameObject:
   - component: {fileID: 1300180301336387780}
   - component: {fileID: 5679494201033741957}
   m_Layer: 6
-  m_Name: Box
+  m_Name: HoaCai
   m_TagString: DEF
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
