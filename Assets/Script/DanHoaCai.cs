@@ -30,7 +30,7 @@ public class DanHoaCai : MonoBehaviour
         }
 
         TocDo = transform.localScale.x * TocDoBay * huong;
-        Destroy(gameObject, 5);
+        Destroy(gameObject, 3f );
         
     }
     

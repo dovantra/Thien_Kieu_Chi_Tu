@@ -94,8 +94,6 @@ public class HoaCai : MonoBehaviour
         }       
     }
     #endregion
-
-
     IEnumerator BanDan()
     {
         if (phamVi)
@@ -108,8 +106,6 @@ public class HoaCai : MonoBehaviour
 
             yield return new WaitForSeconds(0.5f);
             dangBan = false;
-        }
-        
-        
+        }                
     }
 }
