@@ -15,6 +15,7 @@ TagManager:
   - Chameleon_ATK
   - Check_ATK
   - Check_DEF
+  - Cu_Ma_Thu
   layers:
   - Default
   - TransparentFX
