@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5318376872527878433}
   - component: {fileID: 6928073093658965308}
-  - component: {fileID: 1285048848799452756}
   - component: {fileID: 979671312124070268}
+  - component: {fileID: 4194542966962925728}
   m_Layer: 0
   m_Name: Plot
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.009374142, y: 0.6810952, z: -0.03238083}
-  m_LocalScale: {x: 1.1266274, y: 1.3325747, z: 1}
+  m_LocalScale: {x: 1.9534293, y: 1.5374694, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -72,11 +72,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -936657627
+  m_SortingLayer: 1
+  m_SortingOrder: 10
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.08259657, g: 0.08679241, b: 0.08237091, a: 1}
+  m_Color: {r: 0.37991208, g: 0.5773585, b: 0.33443218, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -86,7 +86,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1285048848799452756
+--- !u!114 &979671312124070268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6677155808539316194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e018b6f04b0ed04da36ffff3beac1b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 6928073093658965308}
+  hoverColor: {r: 0.035848916, g: 0.69411767, b: 0.036469568, a: 0.3019608}
+--- !u!61 &4194542966962925728
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,15 +145,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &979671312124070268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6677155808539316194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e018b6f04b0ed04da36ffff3beac1b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

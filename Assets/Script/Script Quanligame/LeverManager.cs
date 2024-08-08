@@ -6,8 +6,8 @@ public class LeverManager : MonoBehaviour
 {
     public static LeverManager main;
 
-    public Transform StartPoint;
-    //public Transform[] path; //sau lafm casc diem radom quai
+  //  public Transform StartPoint;
+    public Transform[] StartPoint; //sau lafm casc diem radom quai
 
     public int currency; // tiền
 

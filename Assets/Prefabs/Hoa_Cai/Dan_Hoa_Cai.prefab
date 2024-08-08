@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5047799897536821582}
   - component: {fileID: 2558816462233100851}
   - component: {fileID: 5325808450999560171}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Dan_Hoa_Cai
   m_TagString: Dan_Hoa_Cai
   m_Icon: {fileID: 0}
@@ -176,4 +176,6 @@ MonoBehaviour:
   TocDo: 0
   huong: -1
   spR: {fileID: 7182583697288343198}
+  id: 1
   dmg: 5
+  tt: {fileID: 11400000, guid: 61f2347f7120228499fe6ac1964dec8c, type: 2}

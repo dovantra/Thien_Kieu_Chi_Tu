@@ -13,6 +13,9 @@ TagManager:
   - ATK_Gau
   - Home
   - Chameleon_ATK
+  - Check_ATK
+  - Check_DEF
+  - Cu_Ma_Thu
   layers:
   - Default
   - TransparentFX
@@ -22,9 +25,9 @@ TagManager:
   - UI
   - DEF
   - ATK
-  - 
-  - 
-  - 
+  - Gau
+  - Hoa_Cai
+  - Chameleon
   - 
   - 
   - 
