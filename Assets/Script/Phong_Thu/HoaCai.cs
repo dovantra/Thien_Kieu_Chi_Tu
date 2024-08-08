@@ -8,7 +8,6 @@ using UnityEngine.UIElements;
 public class HoaCai : MonoBehaviour
 {
     [SerializeField] Animator ani;
-
     [SerializeField] Transform viTriDan;
     [SerializeField] GameObject Dan;
 

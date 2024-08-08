@@ -7,7 +7,7 @@ public class CuMaThu : MonoBehaviour
     [SerializeField] Animator ani;
     [SerializeField] UnityEngine.UI.Slider health;
     [SerializeField] int hp = 50;
-
+    
     void Start()
     {
         health.maxValue = hp;

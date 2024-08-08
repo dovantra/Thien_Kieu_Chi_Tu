@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
+using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.UI;
 using static Gau;
+using static InFor;
 
 public class DanHoaCai : MonoBehaviour
 {
@@ -12,12 +15,15 @@ public class DanHoaCai : MonoBehaviour
     public float TocDo;
     public int huong = -1;
     public SpriteRenderer spR;
+    public int id = 1;
+    public float dmg ;
 
-    public float dmg = 3;
+    public InFor tt;
 
     void Start()
     {
-       
+        
+
 
         if (transform.localPosition.x < 0)
         {
@@ -31,7 +37,10 @@ public class DanHoaCai : MonoBehaviour
 
         TocDo = transform.localScale.x * TocDoBay * huong;
         Destroy(gameObject, 3f );
-        
+
+        var tim = tt.tableObjects.FirstOrDefault(i => i.Id == id);
+        dmg = tim.Dmg;
+
     }
     
     private void Update()

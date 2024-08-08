@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2779180294772596305}
   - component: {fileID: 4312939731898408410}
   - component: {fileID: 4497254851758341500}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Chameleon_ATK
   m_TagString: Chameleon_ATK
   m_Icon: {fileID: 0}

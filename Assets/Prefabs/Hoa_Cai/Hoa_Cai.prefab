@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 6192696484206279022}
   - component: {fileID: 4437169165012746884}
   - component: {fileID: 3830384466437105851}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hoa_Cai
   m_TagString: Check_DEF
   m_Icon: {fileID: 0}
@@ -555,8 +555,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3862473301645934614}
   - component: {fileID: 1300180301336387780}
-  - component: {fileID: 5679494201033741957}
-  m_Layer: 6
+  - component: {fileID: 6888252632856893115}
+  m_Layer: 9
   m_Name: HoaCai
   m_TagString: DEF
   m_Icon: {fileID: 0}
@@ -624,7 +624,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7708255, y: 0.9945135}
   m_EdgeRadius: 0
---- !u!114 &5679494201033741957
+--- !u!114 &6888252632856893115
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -633,9 +633,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 8759533584381778157}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a1daab9058e20b4183361fe25864588, type: 3}
+  m_Script: {fileID: 11500000, guid: 32c083cb280bd324a83338e49ee99b50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: {fileID: 4326413016345838640}
   parentGameObject: {fileID: 0}
-  hp: 15
+  dtDEF: {fileID: 11400000, guid: ed54d8e5e0d017a4a9d85c2421c48aaa, type: 2}
+  atk: {fileID: 11400000, guid: 61f2347f7120228499fe6ac1964dec8c, type: 2}
+  ten: 
+  damgeQV: 0
+  hp: 0

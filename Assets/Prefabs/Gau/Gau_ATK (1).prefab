@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2056987249501986640}
   - component: {fileID: -1467410048486921639}
   - component: {fileID: 1621445894904259213}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gau_ATK (1)
   m_TagString: ATK_Gau
   m_Icon: {fileID: 0}

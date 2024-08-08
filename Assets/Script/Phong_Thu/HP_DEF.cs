@@ -1,34 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class DEF_HP : MonoBehaviour
+public class HP_DEF : MonoBehaviour
 {
-    // Mau cua phe tan cong
-
     [SerializeField] UnityEngine.UI.Slider health;
     [SerializeField] GameObject parentGameObject;
-    public InFor tt;
-    public string ten;
-    public int damge;
-    public int hp;
+
+    [SerializeField] Load_Data_DEF dtDEF;
+    [SerializeField] InFor dtAtk;
+    [SerializeField] string ten;
+    [SerializeField] int damgeQV;
+    [SerializeField] int hp;
+
     void Start()
     {
-        
-
         int currentLayer = gameObject.layer;
         string ten = LayerMask.LayerToName(currentLayer);
-        var tim = tt.tableObjects.FirstOrDefault(i => i.Plant == ten);
 
-        damge = tim.Dmg;
-        hp = tim.Hp;
-
+        hp = dtDEF.HP(dtDEF.plants, ten);
+        
         health.maxValue = hp;
         health.value = hp;
         parentGameObject = transform.parent.gameObject;
-
     }
     private void Update()
     {
@@ -37,17 +31,15 @@ public class DEF_HP : MonoBehaviour
             Destroy(parentGameObject);
         }
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Dan_Hoa_Cai"))
-        {
-            
-            health.value = health.value - 3;
-        }
-        if (collision.gameObject.CompareTag("Home"))
-        {
-            Destroy(parentGameObject);
-        }
+        GameObject QuaiVat = collision.gameObject; 
+        
+        int lQV = QuaiVat.layer;
+        string layerQV = LayerMask.LayerToName(lQV);
+
+        damgeQV = dtAtk.DMG(dtAtk.tableObjects, layerQV);
+        health.value = health.value - damgeQV;
+
     }
 }
