@@ -12,7 +12,22 @@ public class Su_Ho_Phao : MonoBehaviour
 
     public GameObject ball;
     public Transform viTriBall;
-    void Start()
+
+    private void Awake()
+    {
+
+        if (transform.position.x < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+        else
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+    }
+
+
+        void Start()
     {
         
     }

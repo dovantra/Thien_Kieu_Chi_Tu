@@ -19,7 +19,6 @@ public class Canon_Ball : MonoBehaviour
     {
 
 
-
         if (transform.localPosition.x < 0)
         {
             transform.localScale = new Vector3(1, 1, 1);
