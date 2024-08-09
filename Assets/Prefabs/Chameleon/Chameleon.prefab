@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1531733170916979563}
   - component: {fileID: 4168977135909021381}
-  - component: {fileID: 8482086023508652730}
-  m_Layer: 0
+  - component: {fileID: 2306890107467961629}
+  m_Layer: 10
   m_Name: Chameleon
   m_TagString: ATK
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.896163, y: 1.1246052}
   m_EdgeRadius: 0
---- !u!114 &8482086023508652730
+--- !u!114 &2306890107467961629
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,12 +87,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 294222757580385893}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa4ccb07206ecfd4bb69c826d293a4a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 78cfdee7091c477408c538e5079123f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: {fileID: 6014470083170899128}
   parentGameObject: {fileID: 0}
-  hp: 15
+  dtDEF: {fileID: 11400000, guid: ed54d8e5e0d017a4a9d85c2421c48aaa, type: 2}
+  atk: {fileID: 11400000, guid: 61f2347f7120228499fe6ac1964dec8c, type: 2}
+  ten: 
+  damgeQV: 0
+  hp: 0
 --- !u!1 &1543496442299146822
 GameObject:
   m_ObjectHideFlags: 0
