@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 7523078191510247554}
   - component: {fileID: 4569931936074560475}
   - component: {fileID: 8314895506809821006}
-  m_Layer: 0
-  m_Name: GameObject
+  m_Layer: 8
+  m_Name: Box
   m_TagString: ATK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,10 +62,10 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.32859945, y: 0.78863907}
+  m_Offset: {x: 0.12495729, y: 0.4646629}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -76,7 +76,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1840153, y: 1.736063}
+  m_Size: {x: 0.77673084, y: 1.0881107}
   m_EdgeRadius: 0
 --- !u!114 &8314895506809821006
 MonoBehaviour:
@@ -92,6 +92,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: {fileID: 3312186567223443618}
   parentGameObject: {fileID: 0}
+  tt: {fileID: 11400000, guid: 61f2347f7120228499fe6ac1964dec8c, type: 2}
+  ten: 
+  damge: 0
   hp: 15
 --- !u!1 &939493189984331914
 GameObject:
@@ -102,7 +105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5718368635124116883}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ATK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +138,7 @@ GameObject:
   - component: {fileID: 7418044410969363962}
   - component: {fileID: 371554854416744048}
   - component: {fileID: 2238590162621107897}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Background (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,7 +213,7 @@ GameObject:
   - component: {fileID: 7872980396303476770}
   - component: {fileID: 788956519207417832}
   - component: {fileID: 5811092773189340504}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,7 +260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.035578355, g: 0.9924528, b: 0.040342305, a: 1}
+  m_Color: {r: 0, g: 0.8, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -290,7 +293,7 @@ GameObject:
   - component: {fileID: 3534176187061004513}
   m_Layer: 0
   m_Name: Gau
-  m_TagString: Untagged
+  m_TagString: Check_ATK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -304,9 +307,9 @@ Transform:
   m_GameObject: {fileID: 5715482863633708823}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.03, y: -3.91, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3811615839117850381}
   - {fileID: 5718368635124116883}
@@ -397,7 +400,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.19814539, y: 0.975633}
+  m_Offset: {x: 0.1314125, y: 0.33693707}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -408,7 +411,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7968769, y: 2.006335}
+  m_Size: {x: 1.0982075, y: 0.7289431}
   m_EdgeRadius: 0
 --- !u!50 &7346887148766500463
 Rigidbody2D:
@@ -480,6 +483,10 @@ MonoBehaviour:
   cham: 0
   viTriATK: {fileID: 5718368635124116883}
   atk: {fileID: 5612181731272257208, guid: 33ab77b0b56471e47bf19acf73eb935d, type: 3}
+  tt: {fileID: 11400000, guid: 61f2347f7120228499fe6ac1964dec8c, type: 2}
+  ten: 
+  damge: 0
+  hp: 0
 --- !u!1 &8390987636209736388
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,7 +497,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5861287145864543154}
   - component: {fileID: 3312186567223443618}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -581,7 +588,7 @@ GameObject:
   - component: {fileID: 4509877786618752557}
   - component: {fileID: 4867106839096676289}
   - component: {fileID: 1787473168871342290}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -605,7 +612,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.29999962, y: 2.2399998}
+  m_AnchoredPosition: {x: 0.29999962, y: 2.01}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &4509877786618752557
