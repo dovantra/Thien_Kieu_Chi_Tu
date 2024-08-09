@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 6192696484206279022}
   - component: {fileID: 4437169165012746884}
   - component: {fileID: 3830384466437105851}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Hoa_Cai
   m_TagString: Check_DEF
   m_Icon: {fileID: 0}
