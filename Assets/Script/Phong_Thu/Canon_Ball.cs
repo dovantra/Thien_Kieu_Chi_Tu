@@ -2,24 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
-using UnityEditor.PackageManager;
 using UnityEngine;
-using UnityEngine.UI;
-using static Gau;
-using static InFor;
 
-public class DanHoaCai : MonoBehaviour
+public class Canon_Ball : MonoBehaviour
 {
     public Rigidbody2D rig;
     public float TocDoBay = 10;
     public float TocDo;
+    public GameObject off;
+    public Transform viTri ;
     public int huong = -1;
 
 
 
     void Start()
     {
-        
 
 
         if (transform.localPosition.x < 0)
@@ -33,14 +30,14 @@ public class DanHoaCai : MonoBehaviour
         }
 
         TocDo = transform.localScale.x * TocDoBay * huong;
-        Destroy(gameObject, 3f );
+        Destroy(gameObject, 3f);
 
 
     }
-    
+
     private void Update()
     {
-        
+
         rig.velocity = new Vector2(TocDo, 0f);
 
     }
@@ -48,8 +45,10 @@ public class DanHoaCai : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("ATK"))
         {
+            viTri = gameObject.GetComponent<Transform>();
             TocDo = 0;
-            Destroy(gameObject, 0.1f);
+            Instantiate(off, viTri.position, transform.rotation);
+            Destroy(gameObject, 0.05f);
         }
     }
 }
