@@ -16463,6 +16463,7 @@ MonoBehaviour:
   baseEnemy: 8
   EnemyperSecond: 2
   timeBetweenWaves: 5
+  sodiemquaibatdau: 0
 --- !u!114 &1197736540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16475,7 +16476,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1acbcdfeab75a6942adad0fdafcf60ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartPoint: {fileID: 0}
+  StartPoint:
+  - {fileID: 0}
   currency: 0
 --- !u!4 &1197736541
 Transform:
