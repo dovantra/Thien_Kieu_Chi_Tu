@@ -20,7 +20,7 @@ public class Chameleon_atk : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("DEF"))
         {
-            Destroy(gameObject);
+            Destroy(gameObject,0.5f);
         }
     }
 }

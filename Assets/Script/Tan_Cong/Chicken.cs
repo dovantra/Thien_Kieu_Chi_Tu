@@ -46,6 +46,7 @@ public class Chicken : MonoBehaviour
 
         if (collision.gameObject.CompareTag("DEF"))
         {
+            rig.velocity = Vector2.zero;
             StartCoroutine(ATK());
         }
 

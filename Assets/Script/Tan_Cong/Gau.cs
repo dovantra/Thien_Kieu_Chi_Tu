@@ -41,15 +41,6 @@ public class Gau : MonoBehaviour
         TocDo = transform.localScale.x * TocDoChay * huong * Time.deltaTime;
         rig.velocity = new Vector2(TocDo, 0f);
 
-        int currentLayer = gameObject.layer;
-        string ten = LayerMask.LayerToName(currentLayer);
-
-        // var tim = tt.tableObjects.FirstOrDefault(i => i.Plant == ten);
-        // damge = tim.Dmg;
-        // hp = tim.Hp;
-
-        hp = tt.HP(tt.tableObjects, ten);
-        damge = tt.DMG(tt.tableObjects, ten);
         
     }
 
