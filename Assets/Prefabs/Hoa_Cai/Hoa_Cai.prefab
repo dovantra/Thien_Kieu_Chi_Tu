@@ -163,7 +163,7 @@ GameObject:
   - component: {fileID: 3722853964640779179}
   - component: {fileID: 1840414699504153762}
   m_Layer: 5
-  m_Name: Health (1)
+  m_Name: Mau
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 6192696484206279022}
   - component: {fileID: 4437169165012746884}
   - component: {fileID: 3830384466437105851}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Hoa_Cai
   m_TagString: Check_DEF
   m_Icon: {fileID: 0}
@@ -639,7 +639,7 @@ MonoBehaviour:
   health: {fileID: 4326413016345838640}
   parentGameObject: {fileID: 0}
   dtDEF: {fileID: 11400000, guid: ed54d8e5e0d017a4a9d85c2421c48aaa, type: 2}
-  atk: {fileID: 11400000, guid: 61f2347f7120228499fe6ac1964dec8c, type: 2}
+  dtAtk: {fileID: 11400000, guid: 61f2347f7120228499fe6ac1964dec8c, type: 2}
   ten: 
   damgeQV: 0
   hp: 0

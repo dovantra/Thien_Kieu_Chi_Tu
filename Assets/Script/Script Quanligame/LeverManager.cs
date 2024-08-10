@@ -20,10 +20,11 @@ public class LeverManager : MonoBehaviour
         currency = 100;
     }
 
-    public void InCreasecurrency( int amount)   // tăng tiền .
+    public void InCreasecurrency( int amount)   // hàm tăng tiền .
     {
-        currency += amount;
-    }
+         
+       currency += amount;
+    }    
     public bool SpendCurrency( int amount )          // mua tháp
     {
 

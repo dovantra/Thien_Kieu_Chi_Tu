@@ -3,19 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Song_Kiem
-  - Dich
-  - Dan_Hoa_Cai
-  - Undefined
-  - DEF
-  - ATK
-  - ATK_Gau
-  - Home
-  - Chameleon_ATK
-  - Check_ATK
-  - Check_DEF
-  - Cu_Ma_Thu
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -23,12 +11,12 @@ TagManager:
   - 
   - Water
   - UI
-  - DEF
-  - ATK
-  - Gau
-  - Hoa_Cai
-  - Chameleon
-  - Linh_Thu
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -52,19 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: New Layer 1
-    uniqueID: 3358309669
-    locked: 0
-  - name: New Layer 2
-    uniqueID: 2303172893
-    locked: 0
-  - name: New Layer 3
-    uniqueID: 2298895851
-    locked: 0
-  - name: New Layer 4
-    uniqueID: 61267953
-    locked: 0
-  - name: New Layer 5
-    uniqueID: 1540965493
     locked: 0
