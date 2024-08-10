@@ -8,10 +8,8 @@ public class Cam_Tu_Quan : MonoBehaviour
     public GameObject Bom;
 
     void Start()
-    {
-        
-        StartCoroutine(BomOn());
-        
+    {       
+        StartCoroutine(BomOn());       
     }
 
     IEnumerator BomOn()
