@@ -14,8 +14,11 @@ public class DanHoaCai : MonoBehaviour
     public float TocDoBay = 10;
     public float TocDo;
     public int huong = -1;
+    public SpriteRenderer spR;
+    public int id = 1;
+    public float dmg ;
 
-
+    public InFor tt;
 
     void Start()
     {
@@ -35,6 +38,8 @@ public class DanHoaCai : MonoBehaviour
         TocDo = transform.localScale.x * TocDoBay * huong;
         Destroy(gameObject, 3f );
 
+        var tim = tt.tableObjects.FirstOrDefault(i => i.Id == id);
+        dmg = tim.Dmg;
 
     }
     

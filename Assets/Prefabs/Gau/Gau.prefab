@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7523078191510247554}
   - component: {fileID: 4569931936074560475}
-  - component: {fileID: 1244117209663666388}
+  - component: {fileID: 8314895506809821006}
   m_Layer: 8
   m_Name: Box
   m_TagString: ATK
@@ -78,7 +78,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.77673084, y: 1.0881107}
   m_EdgeRadius: 0
---- !u!114 &1244117209663666388
+--- !u!114 &8314895506809821006
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,16 +87,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 114002289356625554}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78cfdee7091c477408c538e5079123f1, type: 3}
+  m_Script: {fileID: 11500000, guid: aa4ccb07206ecfd4bb69c826d293a4a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: {fileID: 3312186567223443618}
   parentGameObject: {fileID: 0}
-  dtDEF: {fileID: 11400000, guid: ed54d8e5e0d017a4a9d85c2421c48aaa, type: 2}
-  atk: {fileID: 11400000, guid: 61f2347f7120228499fe6ac1964dec8c, type: 2}
+  tt: {fileID: 11400000, guid: 61f2347f7120228499fe6ac1964dec8c, type: 2}
   ten: 
-  damgeQV: 0
-  hp: 0
+  damge: 0
+  hp: 15
 --- !u!1 &939493189984331914
 GameObject:
   m_ObjectHideFlags: 0
