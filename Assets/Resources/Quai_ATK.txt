@@ -1,5 +1,5 @@
 ID	Name	HP	Damge
-101	Gau	35	3
+101	Gau	35	30
 102	Chameleon	10	2
 103	Khi_Dau_Cho	40	4
 104	Bo	20	5
